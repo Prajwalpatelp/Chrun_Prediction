@@ -13,20 +13,15 @@ Customer churn is a critical problem in many industries, especially in banking a
 ## 📁 Files & Directory Structure
 
 
-Churn_Prediction/
-     │
-     ├── 📊 churn_modeling.csv         ──▶ Dataset (raw input data)
-     │
-     ├── 📓 churn_modeling.ipynb       ──▶ Model Training & Evaluation Notebook
-     │
-     ├── 📁 encoder.pkl                ┐
-     ├── 📁 scaler.pkl                 ├──▶ Preprocessing Artifacts
-     ├── 📁 gender_map.pkl             ┘
-     │
-     ├── 🧠 model.h5                   ──▶ Trained ANN Model (HDF5 format)
-     │
-     ├── 🧪 requirements.txt           ──▶ Project Dependencies
-     │
-     ├── 🌐 app.py                     ──▶ Streamlit App for Prediction
-     │
-     └── 📄 README.md                  ──▶ Project Documentation
+graph TD
+    A[📁 Churn_Prediction] --> B[📊 churn_modeling.csv<br>Dataset (raw input data)]
+    A --> C[📓 churn_modeling.ipynb<br>Model Training & Evaluation]
+    A --> D[📁 Preprocessing Artifacts]
+    D --> D1[encoder.pkl]
+    D --> D2[scaler.pkl]
+    D --> D3[gender_map.pkl]
+    A --> E[🧠 model.h5<br>Trained ANN Model (HDF5 format)]
+    A --> F[🧪 requirements.txt<br>Project Dependencies]
+    A --> G[🌐 app.py<br>Streamlit App for Prediction]
+    A --> H[📄 README.md<br>Project Documentation]
+
