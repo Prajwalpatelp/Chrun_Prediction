@@ -14,13 +14,10 @@ Customer churn is a critical problem in many industries, especially in banking a
 
 
 graph TD
-    A[📁 Churn_Prediction] --> B[📊 churn_modeling.csv<br>Dataset (raw input data)]
-    A --> C[📓 churn_modeling.ipynb<br>Model Training & Evaluation]
-    A --> D[📁 Preprocessing Artifacts]
-    D --> D1[encoder.pkl]
-    D --> D2[scaler.pkl]
-    D --> D3[gender_map.pkl]
-    A --> E[🧠 model.h5<br>Trained ANN Model (HDF5 format)]
-    A --> F[🧪 requirements.txt<br>Project Dependencies]
-    A --> G[🌐 app.py<br>Streamlit App for Prediction]
-    A --> H[📄 README.md<br>Project Documentation]
+    A[⬇️ Clone Repository] --> B[📦 Install Requirements<br>pip install -r requirements.txt]
+    B --> C[📓 Run Notebook<br>churn_modeling.ipynb]
+    C --> D[🧠 Train ANN Model<br>model.h5]
+    D --> E[💾 Save Artifacts<br>encoder.pkl, scaler.pkl, gender_map.pkl]
+    E --> F[🌐 Launch Streamlit App<br>python app.py]
+    F --> G[📊 Make Predictions<br>Using Trained Model via UI]
+
