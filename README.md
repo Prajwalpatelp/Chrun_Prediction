@@ -24,4 +24,3 @@ graph TD
     A --> F[🧪 requirements.txt<br>Project Dependencies]
     A --> G[🌐 app.py<br>Streamlit App for Prediction]
     A --> H[📄 README.md<br>Project Documentation]
-
