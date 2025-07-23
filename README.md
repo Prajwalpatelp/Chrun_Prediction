@@ -10,14 +10,11 @@ Customer churn is a critical problem in many industries, especially in banking a
 
 ---
 
-## 📁 Files & Directory Structure
+### 🔁 Project Execution Flow
+
+![Execution Flow](Flow_Chart.png)
 
 
-graph TD
-    A[⬇️ Clone Repository] --> B[📦 Install Requirements<br>pip install -r requirements.txt]
-    B --> C[📓 Run Notebook<br>churn_modeling.ipynb]
-    C --> D[🧠 Train ANN Model<br>model.h5]
-    D --> E[💾 Save Artifacts<br>encoder.pkl, scaler.pkl, gender_map.pkl]
-    E --> F[🌐 Launch Streamlit App<br>python app.py]
-    F --> G[📊 Make Predictions<br>Using Trained Model via UI]
+
+
 
