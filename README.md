@@ -14,13 +14,19 @@ Customer churn is a critical problem in many industries, especially in banking a
 
 
 Churn_Prediction/
-│
-├── app.py # Streamlit app to run predictions interactively
-├── churn_modeling.ipynb # Jupyter Notebook used for model training
-├── churn_modeling.csv # Dataset used for training and evaluation
-├── model.h5 # Trained ANN model saved in HDF5 format
-├── encoder.pkl # OneHotEncoder for 'Geography'
-├── scaler.pkl # StandardScaler for feature normalization
-├── gender_map.pkl # Gender encoding map
-├── requirements.txt # All project dependencies
-└── README.md # Project documentation
+     │
+     ├── 📊 churn_modeling.csv         ──▶ Dataset (raw input data)
+     │
+     ├── 📓 churn_modeling.ipynb       ──▶ Model Training & Evaluation Notebook
+     │
+     ├── 📁 encoder.pkl                ┐
+     ├── 📁 scaler.pkl                 ├──▶ Preprocessing Artifacts
+     ├── 📁 gender_map.pkl             ┘
+     │
+     ├── 🧠 model.h5                   ──▶ Trained ANN Model (HDF5 format)
+     │
+     ├── 🧪 requirements.txt           ──▶ Project Dependencies
+     │
+     ├── 🌐 app.py                     ──▶ Streamlit App for Prediction
+     │
+     └── 📄 README.md                  ──▶ Project Documentation
